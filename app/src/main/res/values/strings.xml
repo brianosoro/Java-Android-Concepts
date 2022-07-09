@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">JavaAndroidConcepts</string>
+    <string name="enable_permissions">Enable Permissions</string>
+    <string name="proceed_enabled">Proceed if enabled</string>
+</resources>
