@@ -54,7 +54,7 @@ public class ContactsRepository {
             }
 
         }catch (Exception e){
-            Log.d("Contacts_Exception", e.getMessage());
+
         }
 
         return contacts;
