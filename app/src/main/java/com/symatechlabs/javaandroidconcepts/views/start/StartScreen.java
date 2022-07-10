@@ -24,6 +24,6 @@ public class StartScreen extends AppCompatActivity {
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        startActivity(new Intent(StartScreen.this, ContactsActivity.class));
+
     }
 }

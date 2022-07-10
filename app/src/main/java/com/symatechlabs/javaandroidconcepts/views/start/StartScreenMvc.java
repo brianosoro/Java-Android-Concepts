@@ -1,6 +1,8 @@
 package com.symatechlabs.javaandroidconcepts.views.start;
 
 
+import static com.symatechlabs.javaandroidconcepts.utils.Constants.INTENT_CONTACTS_DATABASE;
+
 import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
@@ -17,7 +19,8 @@ public class StartScreenMvc implements StartScreenInterface {
     View rootView;
     StartScreenBinding startScreenBinding;
     Permissions permissions;
-    String[] PERMISSIONS = {Manifest.permission.READ_CONTACTS};
+    String[] PERMISSIONS = {Manifest.permission.READ_CONTACTS, Manifest.permission.WRITE_EXTERNAL_STORAGE,
+            Manifest.permission.READ_EXTERNAL_STORAGE};
 
     public StartScreenMvc(LayoutInflater inflater, ViewGroup parent) {
         startScreenBinding = StartScreenBinding.inflate(inflater);
@@ -29,9 +32,16 @@ public class StartScreenMvc implements StartScreenInterface {
                 permissions.requestPermissions(PERMISSIONS);
             }
         });
-        startScreenBinding.proceed.setOnClickListener( v -> {
+        startScreenBinding.contacts.setOnClickListener( v -> {
             getContext().startActivity(new Intent(getContext(), ContactsActivity.class));
         });
+
+        startScreenBinding.contactsDB.setOnClickListener( v -> {
+            Intent intent = new Intent(getContext(), ContactsActivity.class);
+            intent.putExtra(INTENT_CONTACTS_DATABASE, true);
+            getContext().startActivity(intent);
+        });
+
     }
 
 

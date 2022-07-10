@@ -3,8 +3,8 @@ package com.symatechlabs.javaandroidconcepts.views.start;
 import android.content.Context;
 import android.view.View;
 
-public interface StartScreenInterface {
+import com.symatechlabs.javaandroidconcepts.views.BaseInterface;
 
-    public View getRootView();
-    public Context getContext();
+public interface StartScreenInterface extends BaseInterface {
+
 }

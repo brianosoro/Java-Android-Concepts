@@ -14,12 +14,21 @@
         />
 
     <Button
-        android:id="@+id/proceed"
+        android:id="@+id/contacts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="@string/proceed_enabled"
+        android:text="@string/contacts"
         android:layout_below="@id/enable"
+        />
+
+    <Button
+        android:id="@+id/contactsDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/contacts_database"
+        android:layout_below="@id/contacts"
         />
 
 </RelativeLayout>

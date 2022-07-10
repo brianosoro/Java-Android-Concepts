@@ -9,20 +9,16 @@ import androidx.core.app.ActivityCompat;
 public class ContactsActivity extends AppCompatActivity {
 
     ContactsMvc contactsMvc;
-
     String[] PERMISSIONS = {Manifest.permission.READ_CONTACTS};
+    Bundle bundle;
 
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        contactsMvc = new ContactsMvc(LayoutInflater.from(this), null);
+        bundle = getIntent().getExtras();
+        contactsMvc = new ContactsMvc(LayoutInflater.from(this), null, bundle);
         setContentView(contactsMvc.getRootView());
-
-
-
-
-
 
 
 

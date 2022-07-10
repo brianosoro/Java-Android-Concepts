@@ -26,8 +26,8 @@ public class Permissions {
         return true;
     }
 
-    public void requestPermissions(String... PERMISSIONS){
-        ActivityCompat.requestPermissions((Activity) context, PERMISSIONS, 1); //Could later on update this part
+    public void requestPermissions(String... permissions){
+        ActivityCompat.requestPermissions((Activity) context, permissions, 1); //Could later on update this part
     }
 
 }
