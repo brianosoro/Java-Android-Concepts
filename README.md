@@ -1,0 +1,2 @@
+# Java-Android-Concepts
+This is an attempt to catalog some of the ideas I've seen when using Java to develop Android applications. I would make an effort to leverage the standard features of the Android framework. The user interface design will not be the main focus of this exercise as it is subjective. Over time, as the project gets more complicated, some parts of the code may inadvertently get modified.
