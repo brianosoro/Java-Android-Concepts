@@ -1,13 +1,10 @@
 package com.symatechlabs.javaandroidconcepts.data;
 
 import androidx.room.Dao;
-import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
-
-import com.symatechlabs.javaandroidconcepts.model.Contact;
 
 import java.util.List;
 

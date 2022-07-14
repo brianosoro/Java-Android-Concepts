@@ -1,7 +1,7 @@
 package com.symatechlabs.javaandroidconcepts.views.start;
 
 
-import static com.symatechlabs.javaandroidconcepts.utils.Constants.INTENT_CONTACTS_DATABASE;
+import static com.symatechlabs.javaandroidconcepts.common.Constants.INTENT_CONTACTS_DATABASE;
 
 import android.Manifest;
 import android.content.Context;
@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.symatechlabs.javaandroidconcepts.databinding.StartScreenBinding;
-import com.symatechlabs.javaandroidconcepts.utils.Permissions;
+import com.symatechlabs.javaandroidconcepts.common.Permissions;
 import com.symatechlabs.javaandroidconcepts.views.contacts.ContactsActivity;
 
 public class StartScreenMvc implements StartScreenInterface {
@@ -20,7 +20,7 @@ public class StartScreenMvc implements StartScreenInterface {
     StartScreenBinding startScreenBinding;
     Permissions permissions;
     String[] PERMISSIONS = {Manifest.permission.READ_CONTACTS, Manifest.permission.WRITE_EXTERNAL_STORAGE,
-            Manifest.permission.READ_EXTERNAL_STORAGE};
+            Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.INTERNET, Manifest.permission.ACCESS_NETWORK_STATE, Manifest.permission.CHANGE_NETWORK_STATE};
 
     public StartScreenMvc(LayoutInflater inflater, ViewGroup parent) {
         startScreenBinding = StartScreenBinding.inflate(inflater);

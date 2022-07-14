@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.symatechlabs.javaandroidconcepts.R;
-import com.symatechlabs.javaandroidconcepts.model.Contact;
+import com.symatechlabs.javaandroidconcepts.model.contacts.Contact;
 
 import java.util.List;
 

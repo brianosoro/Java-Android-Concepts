@@ -1,4 +1,4 @@
-package com.symatechlabs.javaandroidconcepts.model;
+package com.symatechlabs.javaandroidconcepts.model.contacts;
 
 public class Contact {
 

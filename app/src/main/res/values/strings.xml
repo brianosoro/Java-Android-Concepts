@@ -3,4 +3,5 @@
     <string name="enable_permissions">Enable Permissions</string>
     <string name="contacts">View Contacts</string>
     <string name="contacts_database">View Contacts (Saved on DB)</string>
+    <string name="movie_title">Enter Movie Title</string>
 </resources>

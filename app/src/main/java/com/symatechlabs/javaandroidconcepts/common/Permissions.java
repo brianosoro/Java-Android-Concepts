@@ -1,4 +1,4 @@
-package com.symatechlabs.javaandroidconcepts.utils;
+package com.symatechlabs.javaandroidconcepts.common;
 
 import android.app.Activity;
 import android.content.Context;

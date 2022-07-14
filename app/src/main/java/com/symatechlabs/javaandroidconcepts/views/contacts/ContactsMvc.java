@@ -1,7 +1,7 @@
 package com.symatechlabs.javaandroidconcepts.views.contacts;
 
 import static com.symatechlabs.javaandroidconcepts.JavaAndroidConcepts.appDatabase;
-import static com.symatechlabs.javaandroidconcepts.utils.Constants.INTENT_CONTACTS_DATABASE;
+import static com.symatechlabs.javaandroidconcepts.common.Constants.INTENT_CONTACTS_DATABASE;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.symatechlabs.javaandroidconcepts.data.Contacts;
 import com.symatechlabs.javaandroidconcepts.databinding.ContactsActivityBinding;
-import com.symatechlabs.javaandroidconcepts.model.Contact;
+import com.symatechlabs.javaandroidconcepts.model.contacts.Contact;
 import com.symatechlabs.javaandroidconcepts.model.service.ContactsRepository;
 import com.symatechlabs.javaandroidconcepts.views.adapters.ContactsAdapter;
 

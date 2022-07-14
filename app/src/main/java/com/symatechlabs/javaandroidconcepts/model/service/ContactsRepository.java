@@ -7,13 +7,9 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.database.Cursor;
 import android.provider.ContactsContract;
-import android.util.Log;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import com.symatechlabs.javaandroidconcepts.data.AppDatabase;
 import com.symatechlabs.javaandroidconcepts.data.Contacts;
-import com.symatechlabs.javaandroidconcepts.model.Contact;
+import com.symatechlabs.javaandroidconcepts.model.contacts.Contact;
 
 import java.util.List;
 
