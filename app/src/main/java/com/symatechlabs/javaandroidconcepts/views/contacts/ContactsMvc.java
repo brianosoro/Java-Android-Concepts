@@ -63,15 +63,12 @@ public class ContactsMvc implements ContactsInterface{
                     contactList.add(contact);
                 }
                 contactsAdapter = new ContactsAdapter(contactList);
-                binding.contactList.setAdapter(contactsAdapter);
-                binding.contactList.setLayoutManager(new LinearLayoutManager(getContext()));
             }
         }else{
             contactsRepository = new ContactsRepository(getContext());
             contactList = contactsRepository.getContacts(contactList);
             contactsAdapter = new ContactsAdapter(contactList);
-            binding.contactList.setAdapter(contactsAdapter);
-            binding.contactList.setLayoutManager(new LinearLayoutManager(getContext()));
+
         }
     }
 
